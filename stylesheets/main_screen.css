@@ -1,0 +1,205 @@
+/* line 1, ../sass/main_screen.scss */
+.main_screen {
+  position: relative;
+}
+
+/* line 4, ../sass/main_screen.scss */
+header {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+/* line 9, ../sass/main_screen.scss */
+header .logo {
+  padding-top: 30px;
+  padding-left: 10px;
+  width: 40%;
+}
+/* line 13, ../sass/main_screen.scss */
+header .logo p {
+  color: #1298dd;
+  font-size: 36px;
+}
+/* line 16, ../sass/main_screen.scss */
+header .logo p span {
+  font-size: 36px;
+}
+/* line 21, ../sass/main_screen.scss */
+header .menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+/* line 26, ../sass/main_screen.scss */
+header .menu .menu_list-icon {
+  display: none;
+  margin-top: 32px;
+}
+/* line 29, ../sass/main_screen.scss */
+header .menu .menu_list-icon a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #676767;
+}
+/* line 35, ../sass/main_screen.scss */
+header .menu .menu_list {
+  padding-top: 40px;
+  display: flex;
+  width: 100%;
+}
+/* line 39, ../sass/main_screen.scss */
+header .menu .menu_list .menu_item {
+  width: 25%;
+  text-align: center;
+}
+/* line 42, ../sass/main_screen.scss */
+header .menu .menu_list .menu_item a {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+/* line 46, ../sass/main_screen.scss */
+header .menu .menu_list .menu_item a:hover {
+  background-color: #2997ee;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+/* line 56, ../sass/main_screen.scss */
+.main_bg {
+  background: url(../img/bg-logo.png) no-repeat center top/cover;
+  height: 630px;
+}
+/* line 60, ../sass/main_screen.scss */
+.main_bg .main_bg-text p {
+  padding-top: 170px;
+  padding-bottom: 50px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+/* line 69, ../sass/main_screen.scss */
+.main_bg .main_bg-button {
+  text-align: center;
+}
+/* line 71, ../sass/main_screen.scss */
+.main_bg .main_bg-button button {
+  border: 1px #55c240 solid;
+  text-align: center;
+  color: #ffffff;
+  background-color: #55c240;
+  font-size: 34px;
+  padding: 15px 65px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* line 81, ../sass/main_screen.scss */
+.main_bg .main_bg-button button:hover {
+  box-shadow: 0 0 13px 9px rgba(40, 100, 109, 0.5);
+}
+
+/* line 87, ../sass/main_screen.scss */
+.section {
+  position: absolute;
+  margin: auto;
+  top: 590px;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  width: 60%;
+  height: 34%;
+  min-width: 200px;
+  max-width: 550px;
+  border-radius: 10px;
+  border-bottom: 7px #51c03d solid;
+}
+/* line 100, ../sass/main_screen.scss */
+.section h2 {
+  text-transform: capitalize;
+  font-size: 22px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+/* line 107, ../sass/main_screen.scss */
+.section .country {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 112, ../sass/main_screen.scss */
+.section .country .country_main {
+  width: 20%;
+  text-align: center;
+}
+/* line 115, ../sass/main_screen.scss */
+.section .country .country_main p {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 125, ../sass/main_screen.scss */
+  header .menu {
+    width: 10%;
+  }
+
+  /* line 128, ../sass/main_screen.scss */
+  header .menu .menu_list-icon {
+    display: block;
+  }
+
+  /* line 131, ../sass/main_screen.scss */
+  header .menu .menu_list {
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    display: none;
+    padding: 0;
+    width: 150px;
+  }
+  /* line 139, ../sass/main_screen.scss */
+  header .menu .menu_list .menu_item {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+  /* line 144, ../sass/main_screen.scss */
+  header .menu .menu_list .menu_item a {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  /* line 150, ../sass/main_screen.scss */
+  .menu_list a {
+    width: 100%;
+  }
+
+  /* line 153, ../sass/main_screen.scss */
+  .menu:hover > .menu_list {
+    display: block;
+  }
+
+  /* line 157, ../sass/main_screen.scss */
+  .section .country .country_main {
+    display: none;
+  }
+
+  /* line 160, ../sass/main_screen.scss */
+  .section {
+    height: 10%;
+    top: 678px;
+  }
+
+  /* line 164, ../sass/main_screen.scss */
+  .section h2 {
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,12 @@
+/* line 1, ../sass/footer.scss */
+footer {
+  background-color: #414141;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* line 6, ../sass/footer.scss */
+footer p {
+  font-size: 14px;
+  color: #ffffff;
+}

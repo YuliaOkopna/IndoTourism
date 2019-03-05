@@ -1,0 +1,41 @@
+/* line 1, ../sass/about.scss */
+.body_about {
+  background-color: #ececec;
+}
+
+/* line 4, ../sass/about.scss */
+.about {
+  padding-top: 210px;
+  font-size: 26px;
+  text-align: center;
+}
+/* line 8, ../sass/about.scss */
+.about .about_list {
+  padding-top: 50px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+/* line 13, ../sass/about.scss */
+.about .about_list .about_list-main {
+  width: 25%;
+  font-size: 20px;
+}
+/* line 16, ../sass/about.scss */
+.about .about_list .about_list-main p {
+  padding-top: 25px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 25, ../sass/about.scss */
+  .about {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 639px) {
+  /* line 31, ../sass/about.scss */
+  .about .about_list .about_list-main {
+    width: 50%;
+  }
+}
